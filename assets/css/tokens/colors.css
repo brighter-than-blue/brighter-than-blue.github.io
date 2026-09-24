@@ -1,0 +1,44 @@
+/* Base palette, matching special-octo-goggles/src/css/variables.css verbatim.
+   The blue ramp is canonical in both places — the source repo adopted it and
+   retired its indigo placeholder (#4f46e5) in the 30 Aug merge. */
+:root{
+  --color-bg:#f8f9fa;
+  --color-surface:#ffffff;
+  --color-border:#e0e0e0;
+  --color-text-primary:#1a1a2e;
+  --color-text-muted:#6b7280;
+
+  --blue-50:#eef4ff;
+  --blue-100:#dbe6ff;
+  --blue-200:#bcd0ff;
+  --blue-300:#8fb0ff;
+  --blue-400:#5c88f5;
+  --blue-500:#1361d8;
+  --blue-600:#0f4eae;
+  --blue-700:#0d3f8c;
+  --blue-800:#0b3170;
+  --blue-900:#091f49;
+
+  --color-accent:var(--blue-500);
+  --color-accent-hover:var(--blue-600);
+
+  --color-success:#16a34a;
+  --color-success-bg:#f0fdf4;
+  --color-warning:#d97706;
+  --color-warning-bg:#fffbeb;
+  --color-error:#dc2626;
+  --color-error-bg:#fef2f2;
+
+  /* Semantic aliases */
+  --surface-page:var(--color-bg);
+  --surface-card:var(--color-surface);
+  --surface-sunken:var(--color-bg);
+  --surface-accent-soft:var(--blue-50);
+  --text-body:var(--color-text-primary);
+  --text-muted:var(--color-text-muted);
+  --text-on-accent:#ffffff;
+  --text-link:var(--color-accent);
+  --border-default:var(--color-border);
+  --border-accent:var(--color-accent);
+  --focus-ring:0 0 0 3px color-mix(in srgb, var(--color-accent) 25%, transparent);
+}

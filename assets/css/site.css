@@ -1,0 +1,102 @@
+/* Page styles. Structure mirrors the design system's Page / PageHeader /
+   PageBody containers and the Button component; every value is a token. */
+
+/* Page — the only layout container: 960px measure, centred, --space-xl padding. */
+.page {
+  max-width: var(--measure-page);
+  margin: 0 auto;
+  padding: var(--space-xl);
+}
+
+/* PageHeader — centred, 48px above and 32px below. */
+.page-header {
+  --mark-height: 48px;
+  display: flex;
+  justify-content: center;
+  padding: var(--space-2xl) 0 var(--space-xl);
+}
+
+/* Logo lockup — mark beside the wordmark. The gap is 30% of the mark's height;
+   the wordmark is scaled from the guidelines' 58px/27px specimen. */
+.lockup {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--mark-height) * 0.3);
+  margin: 0;
+}
+
+.lockup img {
+  height: var(--mark-height);
+  width: auto;
+}
+
+.wordmark {
+  font-size: calc(var(--mark-height) * 27 / 58);
+  font-weight: var(--weight-semibold);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  color: var(--text-body);
+}
+
+.wordmark-than {
+  font-weight: var(--weight-regular);
+  color: var(--text-muted);
+}
+
+/* PageBody — the prose column. */
+.page-body {
+  max-width: var(--measure-prose);
+  margin: 0 auto;
+}
+
+.page-body p {
+  margin: 0 0 var(--space-md);
+  color: var(--text-muted);
+}
+
+/* Sections sit 48px apart. h2 is 20px/700 over a 1px rule. */
+.section {
+  margin-top: var(--space-2xl);
+}
+
+.section h2 {
+  margin: 0 0 var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--border-default);
+  font-size: var(--text-h2);
+  font-weight: var(--weight-bold);
+  color: var(--text-body);
+}
+
+/* Button, primary variant — the single main action on this page. */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-lg);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent);
+  color: var(--text-on-accent);
+  font-size: var(--text-control);
+  font-weight: var(--weight-semibold);
+  transition: var(--transition-control);
+}
+
+.btn:hover {
+  background: var(--color-accent-hover);
+  color: var(--text-on-accent);
+  text-decoration: none;
+}
+
+.btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: var(--space-md);
+  }
+}

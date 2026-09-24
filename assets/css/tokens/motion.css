@@ -1,0 +1,6 @@
+:root{
+  --ease-standard:cubic-bezier(0.4,0,0.2,1); /* @kind other */
+  --duration-fast:0.15s; /* @kind other */
+  --duration-panel:0.28s; /* @kind other */
+  --transition-control:background var(--duration-fast) ease, border-color var(--duration-fast) ease, color var(--duration-fast) ease;
+}
