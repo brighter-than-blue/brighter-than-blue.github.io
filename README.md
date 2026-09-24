@@ -7,7 +7,7 @@ The Brighter than Blue website — a single static page hosted on GitHub Pages.
 - `index.html` — the whole site: logo lockup and a contact section.
 - `assets/css/styles.css` + `assets/css/tokens/` — a vendored copy of the Brighter than Blue
   design system tokens (colours, type, spacing, elevation, motion, base reset), synced from the
-  design system project `b16cae8f-0185-4662-ac4f-c8114e24f192`.
+  Brighter than Blue design system project.
 - `assets/css/site.css` — page layout, built from those tokens only. The classes mirror the
   system's `Page`, `PageHeader`, `PageBody` and `Button` components.
 - `assets/logo/` — the `b` mark in full colour, mono and reverse, plus a 240px PNG for
